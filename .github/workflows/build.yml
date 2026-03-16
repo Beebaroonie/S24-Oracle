@@ -2,7 +2,7 @@ name: Build Oracle APK
 on: [push]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - name: Build with Buildozer
@@ -10,6 +10,8 @@ jobs:
         id: buildozer
         with:
           buildozer_version: master
+          buildozer_command: buildozer android debug
+          workdir: .
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
