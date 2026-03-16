@@ -5,13 +5,27 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - name: Build with Buildozer
-        uses: ArtemSBulgakov/buildozer-action@v1
-        id: buildozer
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          buildozer_version: master
-          buildozer_command: buildozer android debug
-          workdir: .
+          python-version: '3.11'
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y build-essential git ffmpeg libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev zlib1g-dev libgstreamer1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good libsqlite3-dev sqlite3 bzip2 libbz2-dev libssl-dev openssl libgdbm-dev libgdbm-compat-dev liblzma-dev libreadline-dev libncursesw5-dev libffi-dev uuid-dev tk-dev
+
+      - name: Install Buildozer and Cython
+        run: |
+          pip install --user --upgrade buildozer cython virtualenv
+          export PATH=$PATH:~/.local/bin
+
+      - name: Build with Buildozer
+        run: |
+          export PATH=$PATH:~/.local/bin
+          yes | ~/.local/bin/buildozer android debug
+        
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
