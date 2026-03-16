@@ -1,0 +1,15 @@
+[0m[1;34m# Check configuration tokens[0m
+[0m[1;34m# Ensure build layout[0m
+[0m[1;30m# Create directory /data/data/com.termux/files/home/.buildozer[0m
+[0m[1;30m# Create directory /data/data/com.termux/files/home/.buildozer/cache[0m
+[0m[1;30m# Create directory /data/data/com.termux/files/home/s24-oracle/.buildozer[0m
+[0m[1;30m# Create directory /data/data/com.termux/files/home/s24-oracle/bin[0m
+[0m[1;30m# Create directory /data/data/com.termux/files/home/s24-oracle/.buildozer/applibs[0m
+[0m[1;30m# Create directory /data/data/com.termux/files/home/.buildozer/android/platform/android/platform[0m
+[0m[1;30m# Create directory /data/data/com.termux/files/home/s24-oracle/.buildozer/android/platform[0m
+[0m[1;30m# Create directory /data/data/com.termux/files/home/s24-oracle/.buildozer/android/app[0m
+[0m[1;34m# Check configuration tokens[0m
+[0m[1;34m# Preparing build[0m
+[0m[1;34m# Check requirements for android[0m
+[0m[1;34m# Check configuration tokens[0m
+[0m[1;31m# zlib headers must be installed, run: sudo apt-get install zlib1g-dev[0m

@@ -1,0 +1,17 @@
+[0m[1;34m# Check configuration tokens[0m
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/bin/buildozer", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/buildozer/scripts/client.py", line 13, in main
+    Buildozer().run_command(sys.argv[1:])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/buildozer/__init__.py", line 1018, in run_command
+    targets = [x[0] for x in self.targets()]
+                             ~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/buildozer/__init__.py", line 910, in targets
+    m = __import__('buildozer.targets.{0}'.format(target),
+            fromlist=['buildozer'])
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/buildozer/targets/android.py", line 40, in <module>
+    from distutils.version import LooseVersion
+ModuleNotFoundError: No module named 'distutils'

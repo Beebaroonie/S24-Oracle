@@ -1,0 +1,56 @@
+[0m[1;34m# Check configuration tokens[0m
+[0m[1;34m# Ensure build layout[0m
+[0m[1;34m# Check configuration tokens[0m
+[0m[1;34m# Preparing build[0m
+[0m[1;34m# Check requirements for android[0m
+[0m[1;30m# Search for Git (git)[0m
+[0m[1;30m#  -> found at /data/data/com.termux/files/usr/libexec/git-core/git[0m
+[0m[1;30m# Search for Cython (cython)[0m
+[0m[1;30m#  -> found at /data/data/com.termux/files/usr/bin/cython[0m
+[0m[1;30m# Search for Java compiler (javac)[0m
+[0m[1;30m#  -> found at /data/data/com.termux/files/usr/lib/jvm/java-21-openjdk/bin/javac[0m
+[0m[1;30m# Search for Java keytool (keytool)[0m
+[0m[1;30m#  -> found at /data/data/com.termux/files/usr/lib/jvm/java-21-openjdk/bin/keytool[0m
+[0m[1;34m# Install platform[0m
+[0m[1;30m# Run ['git', 'config', '--get', 'remote.origin.url'][0m
+[0m[1;30m# Cwd /data/data/com.termux/files/home/s24-oracle/.buildozer/android/platform/python-for-android[0m
+[0m[1;31m# Command failed: ['git', 'config', '--get', 'remote.origin.url'][0m
+[0m[1;31m# ENVIRONMENT:[0m
+[0m[1;31m#     SHELL = '/data/data/com.termux/files/usr/bin/bash'[0m
+[0m[1;31m#     COLORTERM = 'truecolor'[0m
+[0m[1;31m#     HISTCONTROL = 'ignoreboth'[0m
+[0m[1;31m#     PREFIX = '/data/data/com.termux/files/usr'[0m
+[0m[1;31m#     PWD = '/data/data/com.termux/files/home/s24-oracle'[0m
+[0m[1;31m#     TERMUX_VERSION = 'googleplay.2026.02.11'[0m
+[0m[1;31m#     SYSTEMSERVERCLASSPATH = '/system/framework/com.android.location.provider.jar:/system/framework/knoxanalyticssdk.jar:/system/framework/mcfsdk.jar:/system/framework/uibc_java.jar:/system/framework/services.jar:/system/framework/semwifi-service.jar:/system/framework/ssrm.jar:/apex/com.android.adservices/javalib/service-adservices.jar:/apex/com.android.adservices/javalib/service-sdksandbox.jar:/apex/com.android.appsearch/javalib/service-appsearch.jar:/apex/com.android.art/javalib/service-art.jar:/apex/com.android.compos/javalib/service-compos.jar:/apex/com.android.configinfrastructure/javalib/service-configinfrastructure.jar:/apex/com.android.healthfitness/javalib/service-healthfitness.jar:/apex/com.android.media/javalib/service-media-s.jar:/apex/com.android.ondevicepersonalization/javalib/service-ondevicepersonalization.jar:/apex/com.android.permission/javalib/service-permission.jar:/apex/com.android.rkpd/javalib/service-rkp.jar:/apex/com.android.virt/javalib/service-virtualization.jar:/apex/com.samsung.android.shell/javalib/service-samsung-shell.jar'[0m
+[0m[1;31m#     EXTERNAL_STORAGE = '/sdcard'[0m
+[0m[1;31m#     LD_PRELOAD = '/data/data/com.termux/files/usr/lib/libtermux-exec.so'[0m
+[0m[1;31m#     HOME = '/data/data/com.termux/files/home'[0m
+[0m[1;31m#     LANG = 'en_US.UTF-8'[0m
+[0m[1;31m#     DEX2OATBOOTCLASSPATH = '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/framework-location.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/knoxsdk.jar:/system/framework/com.samsung.android.uwb_extras.jar:/system/framework/framework-platformcrashrecovery.jar:/system/framework/framework-ondeviceintelligence-platform.jar:/system/framework/framework-nfc.jar:/system/framework/tcmiface.jar:/system/framework/telephony-ext.jar:/system/framework/QPerformance.jar:/system/framework/UxPerformance.jar:/system/framework/esecomm.jar:/apex/com.android.i18n/javalib/core-icu4j.jar'[0m
+[0m[1;31m#     TMPDIR = '/data/data/com.termux/files/usr/tmp'[0m
+[0m[1;31m#     ANDROID_DATA = '/data'[0m
+[0m[1;31m#     ANDROID_STORAGE = '/storage'[0m
+[0m[1;31m#     TERM = 'xterm-256color'[0m
+[0m[1;31m#     GIT_PAGER = 'cat'[0m
+[0m[1;31m#     ASEC_MOUNTPOINT = '/mnt/asec'[0m
+[0m[1;31m#     TERMUX_EXEC__PROC_SELF_EXE = '/data/data/com.termux/files/usr/bin/buildozer'[0m
+[0m[1;31m#     ANDROID_I18N_ROOT = '/apex/com.android.i18n'[0m
+[0m[1;31m#     SHLVL = '1'[0m
+[0m[1;31m#     PAGER = 'cat'[0m
+[0m[1;31m#     ANDROID_ROOT = '/system'[0m
+[0m[1;31m#     BOOTCLASSPATH = '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/framework-location.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/knoxsdk.jar:/system/framework/com.samsung.android.uwb_extras.jar:/system/framework/framework-platformcrashrecovery.jar:/system/framework/framework-ondeviceintelligence-platform.jar:/system/framework/framework-nfc.jar:/system/framework/tcmiface.jar:/system/framework/telephony-ext.jar:/system/framework/QPerformance.jar:/system/framework/UxPerformance.jar:/system/framework/esecomm.jar:/apex/com.android.i18n/javalib/core-icu4j.jar:/apex/com.android.adservices/javalib/framework-adservices.jar:/apex/com.android.adservices/javalib/framework-sdksandbox.jar:/apex/com.android.appsearch/javalib/framework-appsearch.jar:/apex/com.android.bt/javalib/framework-bluetooth.jar:/apex/com.android.configinfrastructure/javalib/framework-configinfrastructure.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.devicelock/javalib/framework-devicelock.jar:/apex/com.android.healthfitness/javalib/framework-healthfitness.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar:/apex/com.android.media/javalib/updatable-media.jar:/apex/com.android.mediaprovider/javalib/framework-mediaprovider.jar:/apex/com.android.mediaprovider/javalib/framework-pdf.jar:/apex/com.android.mediaprovider/javalib/framework-pdf-v.jar:/apex/com.android.mediaprovider/javalib/framework-photopicker.jar:/apex/com.android.ondevicepersonalization/javalib/framework-ondevicepersonalization.jar:/apex/com.android.os.statsd/javalib/framework-statsd.jar:/apex/com.android.permission/javalib/framework-permission.jar:/apex/com.android.permission/javalib/framework-permission-s.jar:/apex/com.android.profiling/javalib/framework-profiling.jar:/apex/com.android.scheduling/javalib/framework-scheduling.jar:/apex/com.android.sdkext/javalib/framework-sdkextensions.jar:/apex/com.android.tethering/javalib/framework-connectivity.jar:/apex/com.android.tethering/javalib/framework-connectivity-b.jar:/apex/com.android.tethering/javalib/framework-connectivity-t.jar:/apex/com.android.tethering/javalib/framework-tethering.jar:/apex/com.android.uwb/javalib/framework-ranging.jar:/apex/com.android.uwb/javalib/framework-uwb.jar:/apex/com.android.virt/javalib/framework-virtualization.jar:/apex/com.android.wifi/javalib/framework-wifi.jar:/apex/com.samsung.android.lifeguard/javalib/framework-lifeguard.jar:/apex/com.samsung.android.shell/javalib/framework-samsung-shell.jar'[0m
+[0m[1;31m#     GEMINI_CLI = '1'[0m
+[0m[1;31m#     ANDROID_TZDATA_ROOT = '/apex/com.android.tzdata'[0m
+[0m[1;31m#     GEMINI_CLI_NO_RELAUNCH = 'true'[0m
+[0m[1;31m#     TMP = '/data/data/com.termux/files/usr/tmp'[0m
+[0m[1;31m#     PATH = '/data/data/com.termux/files/home/.buildozer/android/platform/apache-ant-1.9.4/bin:/data/data/com.termux/files/usr/bin:/product/bin:/apex/com.android.runtime/bin:/apex/com.android.art/bin:/apex/com.android.virt/bin:/system_ext/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin'[0m
+[0m[1;31m#     ANDROID_ART_ROOT = '/apex/com.android.art'[0m
+[0m[1;31m#     ANDROID_ASSETS = '/system/app'[0m
+[0m[1;31m#     _ = '/data/data/com.termux/files/usr/bin/nohup'[0m
+[0m[1;31m# [0m
+[0m[1;31m# Buildozer failed to execute the last command[0m
+[0m[1;31m# The error might be hidden in the log above this error[0m
+[0m[1;31m# Please read the full log, and search for it before[0m
+[0m[1;31m# raising an issue with buildozer itself.[0m
+[0m[1;31m# In case of a bug report, please add a full log with log_level = 2[0m
