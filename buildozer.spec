@@ -37,7 +37,7 @@ android.api = 34
 android.minapi = 21
 
 # (str) Android NDK version to use
-android.ndk = 27b
+android.ndk = 25b
 
 # (bool) Accept the Android SDK license agreement
 android.accept_sdk_license = True
