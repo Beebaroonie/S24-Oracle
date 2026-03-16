@@ -39,6 +39,15 @@ android.minapi = 29
 # (bool) Accept the Android SDK license agreement
 android.accept_sdk_license = True
 
+# (str) Android SDK directory
+android.sdk_path = /usr/local/lib/android/sdk
+
+# (str) Android NDK directory
+android.ndk_path = /usr/local/lib/android/sdk/ndk/27.3.13750724
+
+# (str) Android architectures to build for
+android.archs = arm64-v8a
+
 [buildozer]
 # (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
 log_level = 2
