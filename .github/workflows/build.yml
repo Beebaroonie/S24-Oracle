@@ -11,6 +11,12 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
       - name: Install System Dependencies
         run: |
           sudo apt-get update
