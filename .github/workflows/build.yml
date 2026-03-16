@@ -23,8 +23,8 @@ jobs:
 
       - name: Build with Buildozer
         run: |
-          export ANDROID_SDK_ROOT=$ANDROID_HOME
-          export ANDROID_NDK_ROOT=$ANDROID_NDK_LATEST_HOME
+          export ANDROID_HOME=/usr/local/lib/android/sdk
+          export ANDROID_NDK_HOME=/usr/local/lib/android/sdk/ndk/27.3.13750724
           yes | buildozer android debug
         
       - name: Upload Artifact

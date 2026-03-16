@@ -34,7 +34,10 @@ android.permissions = INTERNET, FOREGROUND_SERVICE, MEDIA_PROJECTION
 android.api = 34
 
 # (int) Minimum API your APK will support.
-android.minapi = 29
+android.minapi = 21
+
+# (str) Android NDK version to use
+android.ndk = 27b
 
 # (bool) Accept the Android SDK license agreement
 android.accept_sdk_license = True
