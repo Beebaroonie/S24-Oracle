@@ -40,10 +40,10 @@ android.minapi = 29
 android.accept_sdk_license = True
 
 # (str) Android SDK directory
-android.sdk_path = /usr/local/lib/android/sdk
+# android.sdk_path = 
 
 # (str) Android NDK directory
-android.ndk_path = /usr/local/lib/android/sdk/ndk/27.3.13750724
+# android.ndk_path = 
 
 # (str) Android architectures to build for
 android.archs = arm64-v8a
