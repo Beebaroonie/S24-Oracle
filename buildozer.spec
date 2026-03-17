@@ -51,6 +51,12 @@ android.accept_sdk_license = True
 # (str) Android architectures to build for
 android.archs = arm64-v8a
 
+# (bool) Enable AndroidX support
+android.enable_androidx = True
+
+# (list) Android Gradle dependencies
+android.gradle_dependencies = "androidx.core:core:1.6.0"
+
 [buildozer]
 # (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
 log_level = 2
