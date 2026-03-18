@@ -15,10 +15,15 @@ Window.clearcolor = (0.05, 0.05, 0.05, 1)
 if platform == 'android':
     from jnius import autoclass, cast, PythonJavaClass, java_method
     from android import activity
+    from android.runnable import run_on_ui_thread
 
     PythonActivity = autoclass('org.kivy.android.PythonActivity')
     Context = autoclass('android.content.Context')
     Intent = autoclass('android.content.Intent')
+    try:
+        ServiceOracleservice = autoclass('org.psychic.s24oracle.ServiceOracleservice')
+    except:
+        pass
     MediaProjectionManager = autoclass('android.media.projection.MediaProjectionManager')
     ImageReader = autoclass('android.media.ImageReader')
     PixelFormat = autoclass('android.graphics.PixelFormat')
@@ -121,6 +126,7 @@ class OracleApp(App):
             
             self.notification_manager.createNotificationChannel(channel)
 
+    @run_on_ui_thread
     def spawn_bubble(self):
         if platform == 'android':
             context = PythonActivity.mActivity
@@ -199,6 +205,7 @@ class OracleApp(App):
             self.window_manager.addView(self.bubble_btn, self.bubble_params)
             self.bubble_active = True
 
+    @run_on_ui_thread
     def remove_bubble(self):
         if platform == 'android' and hasattr(self, 'bubble_btn') and self.bubble_active:
             if hasattr(self, 'viewport_active') and self.viewport_active:
@@ -212,6 +219,7 @@ class OracleApp(App):
         else:
             self.hide_viewport()
 
+    @run_on_ui_thread
     def show_viewport(self):
         if platform == 'android':
             context = PythonActivity.mActivity
@@ -285,6 +293,7 @@ class OracleApp(App):
             self.window_manager.addView(self.viewport_layout, self.viewport_params)
             self.viewport_active = True
 
+    @run_on_ui_thread
     def hide_viewport(self):
         if platform == 'android' and hasattr(self, 'viewport_layout'):
             self.window_manager.removeView(self.viewport_layout)
@@ -336,6 +345,11 @@ class OracleApp(App):
             if platform == 'android':
                 if resultCode == Activity.RESULT_OK:
                     self.update_label("[color=00FF00]Permission Granted![/color]\n[color=8A2BE2]Initializing The Brain...[/color]")
+                    try:
+                        ServiceOracleservice.start(PythonActivity.mActivity, '')
+                        time.sleep(0.5)
+                    except Exception as e:
+                        print('Service start error:', e)
                     self.is_running = True
                     self.btn.text = "[b]SLEEP ORACLE[/b]"
                     self.btn.color = (0.1, 0.8, 0.1, 1) # Green
