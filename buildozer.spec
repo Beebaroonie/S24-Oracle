@@ -19,7 +19,7 @@ version = 1.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,google-genai,jnius
+requirements = python3,kivy,google-genai,jnius,opencv-python,numpy
 
 # (str) Supported orientations (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
@@ -28,7 +28,10 @@ orientation = portrait
 fullscreen = 0
 
 # (list) Permissions
-android.permissions = INTERNET, FOREGROUND_SERVICE, MEDIA_PROJECTION
+android.permissions = INTERNET, FOREGROUND_SERVICE, MEDIA_PROJECTION, SYSTEM_ALERT_WINDOW
+
+# (list) Android services to declare
+android.services = OracleService:main.py
 
 # (int) Target Android API, should be as high as possible.
 android.api = 34
