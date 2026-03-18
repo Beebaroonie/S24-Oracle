@@ -13,7 +13,7 @@ from kivy.core.window import Window
 Window.clearcolor = (0.05, 0.05, 0.05, 1)
 
 if platform == 'android':
-    from jnius import autoclass, cast
+    from jnius import autoclass, cast, PythonJavaClass, java_method
     from android import activity
 
     PythonActivity = autoclass('org.kivy.android.PythonActivity')
@@ -47,9 +47,13 @@ if platform == 'android':
     Settings = autoclass('android.provider.Settings')
     Uri = autoclass('android.net.Uri')
     MotionEvent = autoclass('android.view.MotionEvent')
-    PythonJavaClass = autoclass('jnius.PythonJavaClass')
-    java_method = autoclass('jnius.java_method')
-    
+
+    try:
+        import cv2
+        import numpy as np
+    except ImportError:
+        pass
+        
     # UI Widgets for Viewport
     LinearLayout = autoclass('android.widget.LinearLayout')
     ScrollView = autoclass('android.widget.ScrollView')
