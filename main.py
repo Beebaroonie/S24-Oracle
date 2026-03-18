@@ -21,9 +21,9 @@ if platform == 'android':
     Context = autoclass('android.content.Context')
     Intent = autoclass('android.content.Intent')
     try:
-        ServiceOracleservice = autoclass('org.psychic.s24oracle.ServiceOracleservice')
-    except:
-        pass
+        ServiceOracle = autoclass('org.psychic.s24oracle.ServiceOracle')
+    except Exception as e:
+        print("Failed to load ServiceOracle class:", e)
     MediaProjectionManager = autoclass('android.media.projection.MediaProjectionManager')
     ImageReader = autoclass('android.media.ImageReader')
     PixelFormat = autoclass('android.graphics.PixelFormat')
@@ -346,7 +346,7 @@ class OracleApp(App):
                 if resultCode == Activity.RESULT_OK:
                     self.update_label("[color=00FF00]Permission Granted![/color]\n[color=8A2BE2]Initializing The Brain...[/color]")
                     try:
-                        ServiceOracleservice.start(PythonActivity.mActivity, '')
+                        ServiceOracle.start(PythonActivity.mActivity, '')
                         time.sleep(0.5)
                     except Exception as e:
                         print('Service start error:', e)

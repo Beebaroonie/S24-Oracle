@@ -31,7 +31,7 @@ fullscreen = 0
 android.permissions = INTERNET, FOREGROUND_SERVICE, FOREGROUND_SERVICE_MEDIA_PROJECTION, MEDIA_PROJECTION, SYSTEM_ALERT_WINDOW
 
 # (list) Android services to declare
-android.services = OracleService:service.py:foreground:foregroundServiceType=mediaProjection
+android.services = oracle:service.py:foreground:foregroundServiceType=mediaProjection
 
 # (int) Target Android API, should be as high as possible.
 android.api = 34
