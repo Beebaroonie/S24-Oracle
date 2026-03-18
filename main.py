@@ -103,7 +103,7 @@ class OracleApp(App):
             if not Settings.canDrawOverlays(context):
                 self.update_label("[color=FF0000]OVERLAY PERMISSION REQUIRED[/color]\n[color=8A2BE2]Redirecting to settings...[/color]")
                 intent = Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION)
-                intent.setData(Uri.parse(String("package:") + context.getPackageName()))
+                intent.setData(Uri.parse(String("package:" + str(context.getPackageName()))))
                 context.startActivity(intent)
 
     def setup_notifications(self):
